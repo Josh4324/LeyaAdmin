@@ -1,0 +1,310 @@
+@import 'variables';
+
+.auth-wrapper {
+  background-color: $leyaOpacity;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+// Text sizing
+
+h1 {
+  font-size: 2.375rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.42rem;
+  line-height: 1.38;
+}
+
+h5 {
+  font-size: 1.32rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-lg {
+  font-size: 2.5rem !important;
+  line-height: 1.38;
+}
+
+.text-md {
+  font-size: 2.15rem;
+  line-height: 1.4;
+}
+
+.text-sm {
+  font-size: 0.815rem;
+}
+
+.text-xs {
+  font-size: 0.69rem;
+}
+
+.text-subheading {
+  font-size: 1.13rem;
+  line-height: 1.5;
+}
+
+.text-normal {
+  font-weight: 400 !important;
+}
+
+.text-semi-bold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-xbold {
+  font-weight: 800;
+}
+
+.text-xlbold {
+  font-weight: 900;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+//app-styles
+.loop-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.form-input--extended {
+  color: $leyaBlack;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  border: 1px solid $leyaGreen;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  // border-radius: 0.475rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-green-ext {
+  background-color: $leyaGreen;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.error-icon {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-y: scroll !important;
+}
+body {
+  background: #f5f8fa;
+  font: 14px/1.4 Mulish, 'Trebuchet MS', Arial, sans-serif;
+  // color: rgba(255, 255, 255, 0.5);
+  overflow-y: scroll !important;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 21rem;
+  z-index: 1;
+  width: calc(100% - 21rem);
+  padding: 8rem 1.5rem 1.5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  overflow-y: scroll !important;
+}
+
+.content_item article ul li > span {
+  display: none;
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 890px) {
+}
+
+@media (max-width: 890px) {
+  .content_item article table td:last-child {
+    text-align: right;
+  }
+}
+@media (max-width: 890px) {
+}
+@media (max-width: 890px) {
+}
+
+.head {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 18rem;
+  z-index: 2;
+  width: calc(100% - 18rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #eef2f5;
+}
+.search {
+  max-width: 16rem;
+  width: 100%;
+  margin: 5px 0.75rem 5px 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(14, 14, 14, 0.08);
+  border-radius: 3rem;
+}
+.actions {
+  height: 3rem;
+}
+.actions ul {
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+}
+.actions li {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  padding: 6px;
+}
+.actions li::after {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+  background: $leyaOpacity;
+  border-radius: 0.5rem;
+}
+.actions li:hover::after {
+  display: block;
+}
+.actions li:hover path {
+  fill: rgba(255, 255, 255, 0.7);
+}
+.brand-box {
+  min-height: 150px;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.brand-box img {
+  width: 70px;
+}
+.nav {
+  width: 18rem;
+  height: 100vh;
+  overflow-y: scroll !important;
+  padding-top: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: $leyaBlack;
+  box-shadow: 1px 0 5px -2px rgba(216, 206, 206, 0.7);
+}
+.nav li {
+  display: block;
+  position: relative;
+}
+.nav li a {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+  padding: 0.75rem;
+  position: relative;
+  border-radius: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: $leyaGreen;
+}
+.nav li a svg {
+  margin-right: 0.75rem;
+}
+.nav li ul {
+  padding-left: 1.75rem;
+  position: relative;
+}
+.nav li ul::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 1.7rem;
+  width: 2px;
+  height: calc(100% - 16px);
+  background: rgba($leyaGreen, 0.1);
+}
+.nav li ul a {
+  position: relative;
+  left: 1px;
+}
+.nav li.active > a {
+  color: $gold;
+  cursor: default;
+}
+.nav li.active ul::after {
+  background: $gold;
+}
+.nav li:not(.active) a:hover {
+  background: $leyaBlack;
+  color: $gold;
+}
